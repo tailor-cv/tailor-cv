@@ -7,7 +7,30 @@ keyword match, rewritten bullet points, and an ATS score.
 
 ## Stack
 - **Backend:** Python, FastAPI, Anthropic API, PyMuPDF
-- **Frontend:** Next.js, React
+- **Frontend:** Vite, React, TypeScript, Tailwind CSS, shadcn/ui
+
+## Project structure
+```
+tailor-cv/
+├── backend/    # FastAPI API (uv-managed)
+└── frontend/   # Vite + React app (landing page + product)
+```
+
+## Getting started
+
+### Frontend
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+### Backend
+```bash
+cd backend
+uv sync
+uv run uvicorn main:app --reload
+```
 
 ## Status
 🚧 In active development
